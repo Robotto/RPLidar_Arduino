@@ -83,13 +83,13 @@ static void convert(const rplidar_response_measurement_node_hq_t& from, rplidar_
 
 const int lidarRxPin = 34;
 const int lidarTxPin = 33;
-#define lidarSerial Serial5
+#define lidarSerial Serial1
 
 bool RPLidar::begin()
 {
     pinMode(lidarRxPin, INPUT);
     pinMode(lidarTxPin, OUTPUT);
-    lidarSerial.begin(115200);
+    lidarSerial.begin(460800);
 
     _cached_scan_node_hq_count = 0;
     _isConnected = true;

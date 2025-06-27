@@ -52,11 +52,11 @@ class RPLidar
 {
 public:
     enum {
-        RPLIDAR_TOF_MINUM_MAJOR_ID = 5,
+        RPLIDAR_TOF_MINUM_MAJOR_ID = 6,
     };
     enum {
-        RPLIDAR_SERIAL_BAUDRATE = 115200,  
-        DEFAULT_TIMEOUT = 500,
+        RPLIDAR_SERIAL_BAUDRATE = 460800,  
+        DEFAULT_TIMEOUT = 2000,
     };
     enum {
         MAX_SCAN_NODES = 8192,
